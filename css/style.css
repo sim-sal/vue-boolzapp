@@ -97,3 +97,14 @@
 div > span > a{
     color: rgb(116, 144, 135);
 }
+
+.search{
+    height: 5%;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.search-chats{
+    width: 90%;
+    margin-top: 5px;
+}

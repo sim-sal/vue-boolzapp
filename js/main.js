@@ -172,5 +172,5 @@ createApp({
     methods: {
 
     }
-}).mount("#main-container");
+}).mount("#container");
 

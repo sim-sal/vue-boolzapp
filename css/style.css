@@ -21,7 +21,7 @@
 }
 
 /* container principale */
-#main-container{
+#container{
     height: 90%;
     width: 80%;
     background-color: rgb(235, 235, 235);
@@ -36,6 +36,11 @@
     max-width: 100%;
 }
 
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
 /* parte destra del container principale */
 .main-right{
     background-color: rgb(225, 217, 209);
@@ -48,4 +53,47 @@
 
 .main-left-up{
     height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.user-icon > img{
+    float: left;
+}
+
+.avatar{
+    max-width: 10%;
+}
+
+.main-left-icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-left-icons > i{
+    color: rgb(176, 176, 176);
+}
+
+.get-notifications{
+    background-color: rgb(141, 217, 252);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.get-notifications > i{
+    color: white;
+    font-size: 20px;
+}
+
+.get-notifications > div{
+    width: 70%;
+}
+
+div > span > a{
+    color: rgb(116, 144, 135);
 }

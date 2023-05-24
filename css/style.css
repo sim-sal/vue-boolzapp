@@ -49,9 +49,13 @@
 .main-left-up{
     height: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(235, 235, 235);
+}
+
+.user-icon{
+    width: 70%;
 }
 
 .user-icon > img{
@@ -166,13 +170,18 @@ div > span > a{
 .main-right-up{
     height: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(235, 235, 235);
 }
 
+.right-user-icon{
+    width: 80%;
+}
+
 .right-user-icon > img{
     float: left;
+    max-width: 5%;
 }
 
 .right-user-icon > div > span{
@@ -223,7 +232,7 @@ div > span > a{
 }
 
 .sent-message{
-    width: 30%;
+    width: 35%;
     background-color: rgb(212, 249, 185);
     color: black;
     padding: 8px;
@@ -235,7 +244,7 @@ div > span > a{
 }
 
 .received-message{
-    width: 30%;
+    width: 35%;
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 8px;

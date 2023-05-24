@@ -90,12 +90,12 @@
 
                                 <div>
                                     <h6>{{contact.name}}</h6>
-                                    <span>orario</span>
+                                    <span>{{contact.messages[contact.messages.length-1].message}}</span>
                                 </div>
                             </div>
 
                             <div class="contact-right">
-                                orario
+                                {{contact.messages[contact.messages.length-1].date}}
                             </div>
 
                         </div>

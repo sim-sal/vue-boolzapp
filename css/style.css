@@ -120,8 +120,14 @@ div > span > a{
 
 /* lista contatti */
 .contact{
-    border-top: 1px solid rgb(116, 144, 135);
+    border-top: 1px solid rgb(186, 235, 219);
     display: flex;
+    justify-content: space-between;
+}
+
+.contact:hover{
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
 }
 
 .contact-left{
@@ -130,6 +136,16 @@ div > span > a{
 
 .contact-left > img{
     object-fit: contain;
+}
+
+.contact-left > div > span{
+    color: rgb(175, 181, 189);
+    font-size: 10px;
+}
+
+.contact-right{
+    color: rgb(175, 181, 189);
+    font-size: 10px;
 }
 
 

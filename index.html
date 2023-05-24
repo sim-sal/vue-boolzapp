@@ -70,8 +70,36 @@
                     </div>
 
                     <!-- div ricerca chat -->
-                    <div class="search">
-                        <input class="search-chats" type="text" placeholder="Cerca o inizia una nuova chat">
+                    <div class="search-chats">
+
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <input class="search" type="text" placeholder="Cerca o inizia una nuova chat">
+
+                    </div>
+
+                    <!-- sezione contatti -->
+                    <div class="contacts-list">
+
+                        <div class="contact" v-for="contact in contacts">
+
+                            <div class="contact-left">
+                                <img class="avatar" :src="contact.avatar" alt="">
+
+                                <div>
+                                    <h6>{{contact.name}}</h6>
+                                    <span>orario</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-right">
+                                orario
+                            </div>
+
+                        </div>
+
                     </div>
                     
                 </div>

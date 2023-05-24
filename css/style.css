@@ -41,11 +41,6 @@
     margin: 0 !important;
  }
 
-/* parte destra del container principale */
-.main-right{
-    background-color: rgb(225, 217, 209);
-}
-
 /* parte sinistra del container principale */
 .main-left{
     background-color: white;
@@ -77,6 +72,7 @@
     color: rgb(176, 176, 176);
 }
 
+/* sezione avviso ricezione notifiche */
 .get-notifications{
     background-color: rgb(141, 217, 252);
     height: 10%;
@@ -98,13 +94,54 @@ div > span > a{
     color: rgb(116, 144, 135);
 }
 
+/* barra di ricerca */
 .search{
-    height: 5%;
-    text-align: center;
-    background-color: rgb(235, 235, 235);
+    width: 90%;
 }
 
 .search-chats{
-    width: 90%;
-    margin-top: 5px;
+    display: flex;
+    border: 1px solid rgb(116, 144, 135);
+}
+
+.search-chats > div{
+    width: 10%;
+    text-align: center;
+}
+
+.search-chats > div > i{
+    color: rgb(116, 144, 135);
+}
+
+.search-chats > div > i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* lista contatti */
+.contact{
+    border-top: 1px solid rgb(116, 144, 135);
+    display: flex;
+}
+
+.contact-left{
+    display: flex;
+}
+
+.contact-left > img{
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+/* parte destra del container principale */
+.main-right{
+    background-color: rgb(225, 217, 209);
 }

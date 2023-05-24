@@ -215,3 +215,38 @@ div > span > a{
     border: none;
     border-radius: 5px;
 }
+
+/* area della chat */
+.area-sent-message{
+    display: flex;
+    justify-content: end;
+}
+
+.sent-message{
+    width: 30%;
+    background-color: rgb(212, 249, 185);
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.received-message{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hour{
+    color: rgb(176, 176, 176);
+    font-size: 10px;
+}

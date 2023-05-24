@@ -3,6 +3,8 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            activeContact: 0,
+
             contacts: [
                 {
                     name: 'Michele',
@@ -170,7 +172,13 @@ createApp({
         }
     },
     methods: {
-
+        changeContact(index){
+            this.activeContact = index;
+        }
     }
 }).mount("#container");
+
+//al click richiamare la funzione
+//alla funzione devo passare l'indice del contatto
+//nella funzione aggiorno l'active contact col nuovo index
 

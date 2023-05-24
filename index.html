@@ -34,7 +34,7 @@
             <div class="row row-no-padding">
 
                 <!-- col sx -->
-                <div class="col-4 main-left">
+                <div class="col-4 g-0 main-left">
 
                     <!-- parte superiore della colonna -->
                     <div class="main-left-up">
@@ -83,7 +83,7 @@
                     <!-- sezione contatti -->
                     <div class="contacts-list">
 
-                        <div class="contact" v-for="contact in contacts">
+                        <div class="contact" v-for="(contact, index) in contacts" @click="changeContact(index)">
 
                             <div class="contact-left">
                                 <img class="avatar" :src="contact.avatar" alt="">
@@ -105,7 +105,7 @@
                 </div>
 
                 <!-- col-dx -->
-                <div class="col-8 main-right">
+                <div class="col-8 g-0 main-right">
 
                     <!-- parte superiore della colonna -->
                     <div class="main-right-up">
@@ -115,8 +115,8 @@
                             <img class="avatar" src="img/avatar_main.png" alt="">
 
                             <div>
-                                <h6>Nome</h6>
-                                <span>Ultimo accesso</span>
+                                <h6>{{contacts[activeContact].name}}</h6>
+                                <span>Ultimo accesso oggi alle {{contacts[activeContact].messages[contacts[activeContact].messages.length-1].date}}</span>
                             </div>
 
 
@@ -133,7 +133,41 @@
                     </div>
 
                     <div class="area-chat">
-                        
+
+                        <div class="container">
+
+                            <div class="row" v-for="contact in contacts">
+                                
+                                <div class="col-12 area-sent-message">
+
+                                    <div class="sent-message">
+
+                                        <span></span>
+
+                                        <div class="hour">
+                                            
+                                        </div>
+
+                                    </div>
+    
+                                </div>
+    
+                                <div class="col-12 area-received-message">
+    
+                                    <div class="received-message">
+
+                                        <span>Ciao anche a te</span>
+
+                                        <div class="hour">
+                                            16:15
+                                        </div>
+                                    </div>
+    
+                                </div>
+                                
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="main-right-down">

@@ -192,6 +192,20 @@ createApp({
 
                 this.textMessage = '';
             }
+
+            
+            setTimeout(this.receivedMessage, 1000)
+            
+        },
+
+        receivedMessage(){
+            const newMessage = {
+                date:  new Date().toLocaleTimeString(),
+                message: 'Ok!',
+                status: 'received'
+            };
+
+            this.contacts[this.activeContact].messages.push(newMessage);
         },
 
         removeMessage(ind){

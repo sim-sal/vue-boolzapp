@@ -211,7 +211,6 @@ createApp({
         },
 
         findContact(nameContact) {
-            return nameContact;
             console.log(nameContact);
         },
           

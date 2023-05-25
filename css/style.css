@@ -44,6 +44,7 @@
 /* parte sinistra del container principale */
 .main-left{
     background-color: white;
+    max-height: 92vh;
 }
 
 .main-left-up{
@@ -123,6 +124,23 @@ div > span > a{
 }
 
 /* lista contatti */
+.contacts-list{
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.contacts-list::-webkit-scrollbar {
+width: 12px;
+}
+.contacts-list::-webkit-scrollbar-track {
+background-color: white;
+border-radius: 10px;
+}
+.contacts-list::-webkit-scrollbar-thumb {
+background-color: rgb(176, 176, 176);
+border-radius: 10px;
+}
+
 .contact{
     border-top: 1px solid rgb(186, 235, 219);
     display: flex;
@@ -227,7 +245,19 @@ div > span > a{
 /* area della chat */
 .area-chat > .container{
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+.area-chat > .container::-webkit-scrollbar {
+width: 12px;
+}
+.area-chat > .container::-webkit-scrollbar-track {
+background-color: rgb(46, 118, 98);
+border-radius: 10px;
+}
+.area-chat > .container::-webkit-scrollbar-thumb {
+background-color: rgb(176, 176, 176);
+border-radius: 10px;
 }
 
 .area-sent-message{

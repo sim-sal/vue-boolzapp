@@ -5,6 +5,9 @@ createApp({
         return{
             activeContact: 0,
 
+            newMessage: '',
+            newMessages: [],
+
             contacts: [
                 {
                     name: 'Michele',
@@ -174,6 +177,25 @@ createApp({
     methods: {
         changeContact(index){
             this.activeContact = index;
+        },
+
+        addMessage(){
+            if(this.newMessage !== ''){
+                const newItem = {
+                    text: this.newMessage,
+                    status: false
+                };
+                
+                console.log(newItem);
+                this.newMessages.push(newItem);
+
+                this.newMessage = '';
+            }
+        },
+
+        removeMessage(ind){
+            console.log('rimuovi!');
+            this.newMessages.splice(ind, 1);
         }
     }
 }).mount("#container");

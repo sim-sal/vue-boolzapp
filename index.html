@@ -151,6 +151,20 @@
                                     </div>
     
                                 </div>
+
+                                <div class="col-12">
+
+                                    <div class="sent-message">
+
+                                        <span>{{newMessages.text}}</span>
+
+                                        <div class="hour">
+                                            
+                                        </div>
+
+                                    </div>
+    
+                                </div>
                                 
                             </div>
 
@@ -161,9 +175,9 @@
 
                         <i class="fa-regular fa-face-smile"></i>
 
-                        <input class="message" type="text" placeholder="Scrivi un messaggio">
+                        <input class="message" type="text" placeholder="Scrivi un messaggio" v-model="newMessage"  @keyup.enter="addMessage">
 
-                        <i class="fa-solid fa-microphone"></i>
+                        <i class="fa-sharp fa-solid fa-paper-plane" @click="addMessage"></i>
 
                     </div>
                 </div>

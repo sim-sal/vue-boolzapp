@@ -182,7 +182,7 @@ createApp({
         addMessage(){
             if(this.textMessage !== ''){
                 const newMessage = {
-                    date: 'giorno/ora/anno',
+                    date:  new Date().toLocaleTimeString(),
                     message: this.textMessage,
                     status: 'sent'
                 };
@@ -201,7 +201,4 @@ createApp({
     }
 }).mount("#container");
 
-//al click richiamare la funzione
-//alla funzione devo passare l'indice del contatto
-//nella funzione aggiorno l'active contact col nuovo index
 

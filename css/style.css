@@ -241,6 +241,7 @@ div > span > a{
     display: flex;
     justify-content: space-between;
     align-items: end;
+    float: right;
 }
 
 .received-message{

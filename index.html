@@ -138,29 +138,16 @@
 
                             <div class="row">
                                 
-                                <div class="col-12 area-sent-message">
+                                <div class="col-12" v-for="(contact, index) in contacts[activeContact].messages">
 
-                                    <div class="sent-message">
+                                    <div :class="(contact.status === 'sent') ? 'sent-message' : 'received-message'">
 
-                                        <span>{{contacts[activeContact].messages[contacts[activeContact].messages.length-1].message}}</span>
-
-                                        <div class="hour">
-                                            {{contacts[activeContact].messages[contacts[activeContact].messages.length-1].date}}
-                                        </div>
-
-                                    </div>
-    
-                                </div>
-    
-                                <div class="col-12 area-received-message">
-    
-                                    <div class="received-message">
-
-                                        <span>Ciao anche a te</span>
+                                        <span>{{contact.message}}</span>
 
                                         <div class="hour">
-                                            16:15
+                                            {{contact.date}}
                                         </div>
+
                                     </div>
     
                                 </div>

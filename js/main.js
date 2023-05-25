@@ -5,8 +5,7 @@ createApp({
         return{
             activeContact: 0,
 
-            newMessage: '',
-            newMessages: [],
+            textMessage: '',
 
             contacts: [
                 {
@@ -180,14 +179,14 @@ createApp({
         },
 
         addMessage(){
-            if(this.newMessage !== ''){
-                const newItem = {
-                    text: this.newMessage,
-                    status: false
+            if(this.textMessage !== ''){
+                const newMessage = {
+                    text: this.textMessage,
+                    status: 'sent'
                 };
                 
-                console.log(newItem);
-                this.newMessages.push(newItem);
+                console.log(newMessage);
+                this.contacts[activeContact].messages.push(newMessage);
 
                 this.newMessage = '';
             }

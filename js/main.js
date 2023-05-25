@@ -8,6 +8,8 @@ createApp({
 
             textMessage: '',
 
+            nameContact: '',
+
             contacts: [
                 {
                     name: 'Michele',
@@ -207,6 +209,13 @@ createApp({
 
             this.contacts[this.activeContact].messages.push(newMessage);
         },
+
+        findContact(nameContact) {
+            return nameContact;
+            console.log(nameContact);
+        },
+          
+        
 
         removeMessage(ind){
             console.log('rimuovi!');

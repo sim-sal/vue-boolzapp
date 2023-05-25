@@ -198,8 +198,7 @@ div > span > a{
 }
 
 .area-chat{
-    height: 80%;
-    overflow: hidden;
+    height: 72vh;
     background-image: url('../img/sfondo-chat.jpg');
     color: white;
 }
@@ -226,6 +225,11 @@ div > span > a{
 }
 
 /* area della chat */
+.area-chat > .container{
+    height: 100%;
+    overflow: scroll;
+}
+
 .area-sent-message{
     display: flex;
     justify-content: end;
@@ -253,6 +257,8 @@ div > span > a{
     position: relative;
     word-wrap: break-word;
 }
+
+
 
 .hour{
     color: rgb(176, 176, 176);

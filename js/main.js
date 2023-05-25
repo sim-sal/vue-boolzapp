@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            
             activeContact: 0,
 
             textMessage: '',
@@ -181,14 +182,15 @@ createApp({
         addMessage(){
             if(this.textMessage !== ''){
                 const newMessage = {
-                    text: this.textMessage,
+                    date: 'giorno/ora/anno',
+                    message: this.textMessage,
                     status: 'sent'
                 };
                 
                 console.log(newMessage);
-                this.contacts[activeContact].messages.push(newMessage);
+                this.contacts[this.activeContact].messages.push(newMessage);
 
-                this.newMessage = '';
+                this.textMessage = '';
             }
         },
 

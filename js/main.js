@@ -210,8 +210,10 @@ createApp({
             this.contacts[this.activeContact].messages.push(newMessage);
         },
 
-        findContact(nameContact) {
-            console.log(nameContact);
+        findContact() {
+            const searchContact = this.nameContact;
+            console.log(searchContact);
+
         },
           
         

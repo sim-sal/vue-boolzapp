@@ -73,10 +73,14 @@
                     <div class="search-chats">
 
                         <div>
-                            <i class="fa-solid fa-magnifying-glass"></i @click="findContact(nameContact)">
+
+                            <button class="search-button" @click="findContact()">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
                         </div>
 
-                        <input class="search" type="text" placeholder="Cerca o inizia una nuova chat" v-model="nameContact">
+                        <input class="search" type="text" placeholder="Cerca o inizia una nuova chat" v-model="nameContact" @keyup.enter="findContact()">
 
                     </div>
 

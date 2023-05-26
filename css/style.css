@@ -53,6 +53,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(235, 235, 235);
+    border-right: 1px solid rgb(176, 176, 176);
 }
 
 .user-icon{
@@ -92,7 +93,8 @@
 }
 
 .get-notifications > div{
-    width: 70%;
+    width: 80%;
+    font-size: 12px;
 }
 
 div > span > a{
